@@ -18,10 +18,10 @@
         <nav>
           <ul id="MenuItems">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html" onclick="redirectToProducts()">Products</a></li>
             <li><a href="#about" onclick="scrollToAbout()">About</a></li>
             <li><a href="#follow-us" onclick="scrollToFollowUs()">Contact</a></li>
-            <li><a href="account.html">Account</a></li>
+            <li><a href="account.html" onclick="redirectToAccount()">Account</a></li>
           </ul>
         </nav>
         <a href="cart.html"><img src="./assets/images/cart.png" alt="" width="30px" height="30px" /></a>
@@ -30,8 +30,8 @@
       <div class="row">
         <div class="col-2">
           <h1>Give your Workout<br />a new Style!</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Voluptas rerum maiores animi officiis</p>
-          <a href="" class="btn">Explore Now &#8594;</a>
+          <p>Discover the latest trends in workout apparel and accessories.</p>
+          <a href="#featured-products" class="btn" onclick="scrollToFeaturedProducts()">Explore Now &#8594;</a>
         </div>
         <div class="col-2">
           <img src="./assets/images/image1.png" alt="" />
@@ -45,7 +45,7 @@
     <div class="small-container">
       <h2 class="title">About Us</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et mauris fermentum, ac tincidunt mi convallis. Sed vehicula felis et nunc tincidunt pharetra. Phasellus hendrerit, lectus eu convallis blandit, libero quam blandit odio, vel viverra lectus risus non libero. Sed id varius arcu. Nulla facilisi. Phasellus volutpat felis a ex rhoncus lacinia.
+        We are dedicated to providing high-quality workout apparel and accessories to our customers. Our mission is to help you achieve your fitness goals with style and comfort.
       </p>
     </div>
   </div>
@@ -68,7 +68,7 @@
   </div>
 
   <!-- Featured Products -->
-  <div class="small-container">
+  <div id="featured-products" class="small-container">
     <h2 class="title">Featured Products</h2>
     <div class="row">
       <!-- Product 1 -->
@@ -82,46 +82,46 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-        <p>$50.00</p>
+        <p>₹400.00</p>
       </div>
       <!-- Product 2 -->
       <div class="col-4">
         <img src="./assets/images/product-2.jpg" alt="" />
+        <h4>Black Shoes</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>₹375.00</p>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-4">
+        <img src="./assets/images/product-3.jpg" alt="" />
+        <h4>Black Joggers</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>₹450.00</p>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-4">
+        <img src="./assets/images/product-4.jpg" alt="" />
         <h4>Blue Checked Shirt</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-          <i class="fa fa-star-o"></i>
-        </div>
-        <p>$45.00</p>
-      </div>
-      <!-- Product 3 -->
-      <div class="col-4">
-        <img src="./assets/images/product-3.jpg" alt="" />
-        <h4>Black Slim Fit Jeans</h4>
-        <div class="rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-        </div>
-        <p>$55.00</p>
-      </div>
-      <!-- Product 4 -->
-      <div class="col-4">
-        <img src="./assets/images/product-4.jpg" alt="" />
-        <h4>Grey Hoodie</h4>
-        <div class="rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-        <p>$45.00</p>
+        <p>₹375.00</p>
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@
       <!-- Product 5 -->
       <div class="col-4">
         <img src="./assets/images/product-5.jpg" alt="" />
-        <h4>Grey Hoodie</h4>
+        <h4>Grey Shoes</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -141,12 +141,12 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-        <p>$40.00</p>
+        <p>₹320.00</p>
       </div>
       <!-- Product 6 -->
       <div class="col-4">
         <img src="./assets/images/product-6.jpg" alt="" />
-        <h4>Blue T-shirt</h4>
+        <h4>Black T-shirt</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -154,12 +154,12 @@
           <i class="fa fa-star-half-o"></i>
           <i class="fa fa-star-o"></i>
         </div>
-        <p>$35.00</p>
+        <p>₹280.00</p>
       </div>
       <!-- Product 7 -->
       <div class="col-4">
         <img src="./assets/images/product-7.jpg" alt="" />
-        <h4>Black Joggers</h4>
+        <h4>Pair of Socks</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -167,12 +167,12 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-half-o"></i>
         </div>
-        <p>$50.00</p>
+        <p>₹400.00</p>
       </div>
       <!-- Product 8 -->
       <div class="col-4">
         <img src="./assets/images/product-8.jpg" alt="" />
-        <h4>White Sneakers</h4>
+        <h4>Black Watch</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -180,7 +180,7 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-        <p>$60.00</p>
+        <p>₹480.00</p>
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@
         <div class="col-2">
           <p>Exclusively available on RedStore</p>
           <h1>Smart Band 4</h1>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum maiores eveniet minus ut deserunt vitae</small>
+          <small>Enhance your fitness journey with the latest smart band technology.</small>
           <a href="" class="btn">Buy Now &#8594;</a>
         </div>
       </div>
@@ -208,7 +208,7 @@
       <div class="row">
         <div class="col-3">
           <i class="fa fa-quote-left"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse quae ex sequi praesentium fuga voluptatem placeat voluptates odio rerum.</p>
+          <p>Great products! They've really helped me stay motivated on my fitness journey.</p>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -221,7 +221,7 @@
         </div>
         <div class="col-3">
           <i class="fa fa-quote-left"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse quae ex sequi praesentium fuga voluptatem placeat voluptates odio rerum.</p>
+          <p>I love the quality of the products and the variety they offer. Highly recommended!</p>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -234,7 +234,7 @@
         </div>
         <div class="col-3">
           <i class="fa fa-quote-left"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse quae ex sequi praesentium fuga voluptatem placeat voluptates odio rerum.</p>
+          <p>Their customer service is exceptional. Always quick to respond and resolve any issues.</p>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -286,7 +286,7 @@
         </div>
         <div class="footer-col-2">
           <img src="./assets/images/logo-white.png" alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eum?</p>
+          <p>Stay updated with our latest products and offers.</p>
         </div>
         <div class="footer-col-3">
           <h3>Useful Links</h3>
@@ -321,6 +321,18 @@
 
     function scrollToFollowUs() {
       document.getElementById('follow-us').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToFeaturedProducts() {
+      document.getElementById('featured-products').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function redirectToProducts() {
+      window.location.href = "products.html";
+    }
+
+    function redirectToAccount() {
+      window.location.href = "account.html";
     }
   </script>
 </body>
